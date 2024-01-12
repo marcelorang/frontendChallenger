@@ -56,12 +56,10 @@ function HomePage() {
             </div>
 
             <div className="col-span-12 sm:col-span-8 xl:col-span-9 relative order-1 sm:order-1 lg:order-2">
-              <div className="flex gap-3 h-full flex-col">
+              <div className="flex gap-3 h-full flex-col ">
                 {/* <Results /> */}
                 <NewResults />
-                <div className='hidden md:inline-block'>
-                  {/* <Chat /> */}
-                </div>
+
 
                 <div className="grow relative z-0">
                   <iframe

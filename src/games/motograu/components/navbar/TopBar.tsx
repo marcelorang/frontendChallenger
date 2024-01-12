@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 import { getGameLogo, getHowToPlay } from '../../helpers'
 import ModalSettings from './components/ModalSettings'
+import HowToPlayModal from './components/HowToPlayModal'
 
 
 
@@ -43,25 +44,26 @@ function TopBar({
 
 
       <div className="flex items-center justify-center bg-gray-800 text-white font-bold rounded-lg shadow-lg gap-2 ml-4">
-        <div className="player-currency rounded-full bg-[#b4fa1d] w-6 h-6 align-center ml-2">
-          <p className="text-black items-center text-center ">R$</p>
+        <div className="player-currency rounded-full w-6 h-6 align-center px-2">
+          <p className="text-white items-center text-center ">R$</p>
         </div>
 
         <div className="flex items-center justify-center border-l h-6 border-gray-600 border-opacity-50 " />
         <span className="balance mr-4">{balance}</span>
-        <button className=" bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 rounded-full h-9 w-9 z-0 ml-4"
+        <button className="transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 rounded-full h-9 w-9 z-0 ml-4"
         // onClick={() => {addfoundFuntion}} //botão para depositar fundos
         >+</button>
 
       </div>
 
 
-      <div className="flex gap-4 p-4 ">
+      <div className="flex gap-2 p-4 ">
         {/* <button type="button" className='bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 rounded-md h-9 w-24 text-white'>Saque</button> */}
+        <HowToPlayModal />
         <ModalSettings
           executeAction={executeAction}
         />
-        <div className='flex rounded-full  h-6 w-5 mr-2'>
+        <div className='flex rounded-full items-start h-6 w-5 mr-2'>
           <button
             className="btn btn-sm px-1 btn-ghost"
             onClick={() => {

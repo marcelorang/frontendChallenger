@@ -32,9 +32,9 @@ export default function MultiplierResults({ variant }: Props) {
   }, [])
 
   return (
-    <div className="w-[50%] h-6 relative z-10">
+    <div className="w-full h-6 relative z-10">
       <If condition={!expand}>
-        <div className="flex mr-10 items-center overflow-x-hidden gap-2">
+        <div className="flex mr-10 items-center overflow-x-hidden gap-2 -my-2">
           {results?.map((result, idx) => {
             return (
               <Badge
