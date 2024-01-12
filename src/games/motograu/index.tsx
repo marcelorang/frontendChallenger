@@ -31,6 +31,7 @@ function HomePage() {
     )
   }, [iframeRef])
 
+
   return (
     <div className="flex min-h-screen overflow-hidden bg-gradient-to-r from-slate-900 to-slate-700">
       <div className="flex w-full sm:gap-3 min-h-screen relative">
@@ -59,13 +60,13 @@ function HomePage() {
                 {/* <Results /> */}
                 <NewResults />
                 <div className='hidden md:inline-block'>
-                  <Chat show />
+                  {/* <Chat /> */}
                 </div>
 
                 <div className="grow relative z-0">
                   <iframe
                     ref={iframeRef}
-                    className="rounded-md overflow-hidden w-full h-full pointer-events-none min-h-[250px] sm:min-h-[300px] sm:w-[77%]"
+                    className="rounded-md overflow-hidden w-full h-full pointer-events-none min-h-[250px] sm:min-h-[300px]"
                     src="/motograu/index.html"
                   ></iframe>
                   <div className="transform sm:translate-y-[-390px] translate-y-[-200px]">
@@ -73,7 +74,7 @@ function HomePage() {
                   </div>
                 </div>
 
-                <div className='w-[77%]'>
+                <div className='w-full'>
                   <Controls color="lime" position={'center'} />
                 </div>
               </div>

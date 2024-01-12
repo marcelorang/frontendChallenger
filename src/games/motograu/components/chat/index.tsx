@@ -49,7 +49,7 @@ export const Chat = ({ show }: Props) => {
 
   return (
     <If condition={show}>
-      <div className="w-80 mt-2 py-2 mb-44 px-2 border-l border-gray-700 border-opacity-50 text-sm rounded-lg bg-black backdrop-blur-sm bg-opacity-30 chat-container absolute right-0 z-40  h-[50%] sm:h-[80%] md:h-[70%] lg:h-[95%]">
+      <div className="w-80 top-16 mt-0 py-2 mb-44 px-2 border-l border-gray-700 border-opacity-50 text-sm rounded-lg bg-black backdrop-blur-sm bg-opacity-30 chat-container absolute right-0 z-40  h-[50%] sm:h-[80%] md:h-[70%] lg:h-[60%]">
         <div className="flex flex-col relative gap-3 h-full">
           <div className="mb-12 p-2 flex-shrink-1 flex-grow basis-0  overflow-y-scroll scrollbar-w-0 scrollbar-track-gray-400 scrollbar-thumb-gray-600 scrollbar scrollbar-track-rounded scrollbar-thumb-rounded">
             {messages.map((data: IGameMessage, idx: number) => {
