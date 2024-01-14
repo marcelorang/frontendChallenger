@@ -49,13 +49,13 @@ const HowToPlayModal = ({
     setSoundEnabled(checked)
   }
   return (
-    <div className="flex items-start mt-1 gap-2">
+    <div className="flex">
       <button
         onClick={() => {
           setShowModal(!showModal)
           soundClick()
         }}
-        className="flex items-center text-gray-200 gap-1  capitalize text-sm font-normal"
+        className="flex items-center text-gray-200 gap-1 capitalize text-sm font-normal"
       >
         <QuestionMarkCircleIcon className="h-6 w-6" />
         {/* <span className="hidden sm:inline">Como Jogar?</span> */}

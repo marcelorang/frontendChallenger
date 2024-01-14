@@ -1,9 +1,10 @@
 import React, { useContext, useEffect, useState } from 'react'
-import ProgressBar from '@/core/components/progress-bar'
+// import ProgressBar from '@/core/components/progress-bar'
 import If from '@/core/components/conditions/if'
 import { GameStatus } from '@/core/providers/enums/game-status'
 import { CrashGameContext } from '@/core/providers/games/crash-game.provider'
 
+import ProgressBar from '../../../../games/motograu/components/progress-bar'
 type Props = {
   color: string
 }

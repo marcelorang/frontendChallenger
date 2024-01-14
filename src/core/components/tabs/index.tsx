@@ -43,17 +43,16 @@ export default function Tabs({
 }: Props) {
   return (
     <div
-      className={`tabs p-1 rounded bg-gray-700 bg-opacity-20 flex w-full justify-center`}
+      className={`tabs p-1 rounded-lg bg-gray-700 bg-opacity-20 flex w-full justify-center`}
     >
       {tabs.map((tab) => {
         return (
           <a
             key={tab.key}
-            className={`tab tab-sm flex max:w-[50%]   items-center text-xs font-medium ${size} ${
-              active == tab.key
-                ? `rounded bg-gray-700 bg-opacity-25 text-gray-300`
-                : ''
-            }`}
+            className={`tab tab-sm flex max:w-[50%]   items-center text-xs font-medium ${size} ${active == tab.key
+              ? `rounded bg-gray-500 bg-opacity-25 text-gray-300`
+              : ''
+              }`}
             onClick={() => toggle(tab.key)}
           >
             {tab.title}

@@ -77,7 +77,7 @@ function ModalSettings({
     )
 
   return (
-    <div className="flex items-center ml-auto gap-2">
+    <div className="flex items-center gap-2">
       {/* <button
         onClick={() => {
           setShowModal(!showModal)
@@ -95,7 +95,7 @@ function ModalSettings({
       <div className="dropdown dropdown-end" ref={dropdownRef}>
         <button
           onClick={toggleDropdown}
-          className="btn btn-sm px-1 btn-ghost"
+          className="flex"
         >
           <Bars3Icon className="w-6 h-6 bg-opacity-50" />
         </button>
@@ -172,7 +172,7 @@ function ModalSettings({
               </div>} */}
 
             <div
-              className="px-3 cursor-pointer py-3 text-sm hover:font-bold text-xs item"
+              className="px-3 cursor-pointer py-3 hover:font-bold text-xs item"
               onClick={() => {
                 setShowGameLimitsModal(!showGameLimitsModal)
                 soundClick()
@@ -184,7 +184,7 @@ function ModalSettings({
             </div>
 
             <a
-              className="px-3 cursor-pointer py-3 text-sm hover:font-bold text-xs item"
+              className="px-3 cursor-pointer py-3 hover:font-bold text-xs item"
               href=""
             >
               <label className="cursor-pointer text-white text-xs opacity-75">
